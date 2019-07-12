@@ -1,0 +1,4 @@
+#!/bin/bash
+export HOST_USER="appuser"
+export BASTION_HOST="34.65.63.20"
+export INTERNAL_HOST="10.172.0.3"

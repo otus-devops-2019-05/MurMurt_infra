@@ -1,0 +1,3 @@
+#!/bin/bash
+alias internal_host='ssh -i ~/.ssh/appuser -o ProxyCommand="ssh -W %h:%p -i ~/.ssh/appuser ${HOST_USER}@${BASTION_HOST}" ${HOST_USER}@${INTERNAL_HOST}'
+alias bastion_host='ssh -A ${HOST_USER}@${BASTION_HOST}'

@@ -1,10 +1,10 @@
+bastion_IP = 34.65.63.20
+someinternalhost_IP = 10.172.0.3
+
 # MurMurt_infra
 MurMurt Infra repository
 
 # Homework #3
-
-bastion_IP = 34.65.63.20
-someinternalhost_IP = 10.172.0.3
 
 connect by one line:
 ssh -A appuser@34.65.63.20 -t 'ssh 10.172.0.3'

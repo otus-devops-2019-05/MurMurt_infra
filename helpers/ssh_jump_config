@@ -1,0 +1,11 @@
+
+Host internal
+   HostName 10.172.0.3
+   ProxyJump bastion_jump
+   User appuser
+   IdentityFile ~/.ssh/appuser
+
+Host bastion_jump
+   HostName 34.65.63.20
+   IdentityFile ~/.ssh/appuser
+   User appuser

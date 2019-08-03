@@ -42,3 +42,15 @@ Cmd to create firewall rule:
 ```
 gcloud compute --project=infra-244914 firewall-rules create default-puma-server --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:9292 --source-ranges=0.0.0.0/0 --target-tags=puma-server
 ```
+
+
+# Homework #5 
+## Сборка образов VM при помощи Packer
+
+Установил Packer
+Установил Application Default Credentials для работы Packer с GCP
+Написал шаблон для образа на Ubuntu
+На основе базового образа создал baked образ с приложением
+Написал скрипт для запуска vm на основе baked образа
+
+

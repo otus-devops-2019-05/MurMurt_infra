@@ -7,7 +7,7 @@ Requires=network.target
 Requires=mongod.service
 
 [Service]
-Type=single
+Type=simple
 User=appuser
 WorkingDirectory=/opt/infra/reddit
 ExecStart=/usr/local/bin/puma

@@ -1,0 +1,11 @@
+{
+	"project_id": "id-123",
+	"source_image_family":"ubuntu-13",
+        "machine_type":"f1-macro",
+	"image_description": "basic image",
+	"disk_size": "100",
+	"disk_type":"standard",
+	"network":"default",
+	"tags":"tag1"
+}
+

@@ -90,4 +90,3 @@ gcloud compute --project=infra-244914 firewall-rules create default-puma-server 
     Чтобы использовать api необходимо создать сredentials и в положить переменную окружения ```GOOGLE_APPLICATION_CREDENTIALS``` 
     путь до файла с сredentials.
     Необходимые библиотеки для работы скрипта в файле ```requirements.txt```
-    

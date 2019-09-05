@@ -39,7 +39,7 @@ while request is not None:
         # TODO: Change code below to process each (name, instances_scoped_list) item:
         if u'instances' in instances_scoped_list:
             for instance in instances_scoped_list[u'instances']:
-                main_tag = instance['tags']['items'][0]
+                main_tag = instance['tags']['items'][0].split('-')[-1]
                 if main_tag not in result:
                     result[main_tag] = []
                 result[main_tag].append(instance['networkInterfaces'][0]['accessConfigs'][0]['natIP'])

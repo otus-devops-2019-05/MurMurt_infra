@@ -74,3 +74,19 @@ gcloud compute --project=infra-244914 firewall-rules create default-puma-server 
 - Научились работать с модулями
 - Параметризовали модули
 - Создали storage bucket
+
+## Homework 7 Знакомство с Ansible
+
+- Установка Ansible
+- Конфигурация Ansible
+- Написание простого плейбука
+- Создание динамического инвентори в формате JSON
+
+Про вызов ```ansible-playbook clone.yml```:
+    Если на машинке уже был склонирован репозиторий, то в выводе команды будет ```changed=0 ```, иначе ```changed=1```
+   
+Про динамический inventory:
+    Решил получить список хостов через api gcp engine и сгруппировать их по первому тегу.
+    Чтобы использовать api необходимо создать сredentials и в положить переменную окружения ```GOOGLE_APPLICATION_CREDENTIALS``` 
+    путь до файла с сredentials.
+    Необходимые библиотеки для работы скрипта в файле ```requirements.txt```

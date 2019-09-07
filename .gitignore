@@ -4,3 +4,6 @@ variables.json
 *.tfstate.backup
 *.tfvars
 .terraform/
+credentials.json
+.idea/
+.DS_Store

@@ -7,3 +7,4 @@ variables.json
 credentials.json
 .idea/
 .DS_Store
+*.retry

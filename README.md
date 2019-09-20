@@ -1,6 +1,8 @@
 # MurMurt_infra
 MurMurt Infra repository
 
+[![Build Status](https://travis-ci.com/otus-devops-2019-05/MurMurt_infra.svg?branch=master)](https://travis-ci.com/otus-devops-2019-05/MurMurt_infra)
+
 ## Homework 2
 
 bastion_IP = 34.65.63.20

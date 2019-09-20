@@ -8,3 +8,4 @@ credentials.json
 .idea/
 .DS_Store
 *.retry
+jdauphant.nginx

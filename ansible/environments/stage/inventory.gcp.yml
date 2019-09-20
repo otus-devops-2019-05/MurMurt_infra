@@ -1,0 +1,14 @@
+plugin: gcp_compute
+projects:
+  - infra-244914
+auth_kind: serviceaccount
+service_account_file: ./credentials.json
+groups:
+  app: "'app' in name"
+  db: "'db' in name"
+hostnames:
+  # List host by name instead of the default public ip
+  - name
+compose:
+  ansible_host: networkInterfaces[0].accessConfigs[0].natIP
+  internal_ip: networkInterfaces[0].networkIP

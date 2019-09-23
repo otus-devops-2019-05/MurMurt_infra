@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-ansible-lint ansible/playbooks/*.yml
+echo "Ansible lint";
+ansible-lint ansible/playbooks/*.yml;

@@ -1,6 +1,8 @@
 # MurMurt_infra
 MurMurt Infra repository
 
+[![Build Status](https://travis-ci.com/otus-devops-2019-05/MurMurt_infra.svg?branch=master)](https://travis-ci.com/otus-devops-2019-05/MurMurt_infra)
+
 ## Homework 2
 
 bastion_IP = 34.65.63.20
@@ -128,3 +130,16 @@ gcloud compute --project=infra-244914 firewall-rules create default-puma-server 
 - Описали с помощью модулей Ansible в плейбуках действия, аналогичные bash-скриптам.
 - Проверили сборку образов
 - Проверили работу приложения на новых образах
+
+## Homework 9 Ansible: работа с ролями и окружениями
+
+- Перенесли созданные плейбуки в раздельные роли
+- Описали два окружения
+- Использовали коммьюнити роль nginx
+- Использовали Ansible Vault для наших окружений
+- Добавили работу с динамическим инвентори в окружениях
+- Настроили тесты в TravisCI
+    Полезные ссылки:
+    https://docs.ansible.com/ansible/latest/scenario_guides/guide_gce.html#create-an-instance
+    https://docs.ansible.com/ansible/latest/plugins/inventory/gcp_compute.html#examples
+

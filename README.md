@@ -160,3 +160,5 @@ gcloud compute --project=infra-244914 firewall-rules create default-puma-server 
 - Добавили провижинеры (ansible)
 - Запустили провижинер для хоста dbserver ```$ vagrant provision dbserver```
 
+- Провели тестирование ролей
+

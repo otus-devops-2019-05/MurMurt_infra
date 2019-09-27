@@ -143,3 +143,22 @@ gcloud compute --project=infra-244914 firewall-rules create default-puma-server 
     https://docs.ansible.com/ansible/latest/scenario_guides/guide_gce.html#create-an-instance
     https://docs.ansible.com/ansible/latest/plugins/inventory/gcp_compute.html#examples
 
+## Homework 10 Ansible: Разработка и тестирование Ansible ролей и плейбуков
+
+#### Локальная разработка с Vagrant
+- Установили Vagrant и VirtualBox
+- Описали локальную инфраструктуру
+- Создали файл Vagrantfile с определением двух VM
+- Создали виртуалки ```$ vagrant up ```
+- Проверили 
+    - наличие боксов ```$ vagrant box list ```
+    - статус ```$ vagrant status```
+    - ssh доступ ```$ vagrant ssh appserver```
+    - пинг c appserver до dbserver ```ping -c 2 10.10.10.10```
+
+#### Доработка ролей
+- Добавили провижинеры (ansible)
+- Запустили провижинер для хоста dbserver ```$ vagrant provision dbserver```
+
+- Провели тестирование ролей
+
